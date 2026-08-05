@@ -1,0 +1,198 @@
+=== 开始测试 ===
+
+[1] 直接测试 openai...
+  成功: 你好！😊 很高兴见到你～有什么我可以帮你的吗？
+
+[2] 测试 agno Agent (OpenAIChat + role_map)...
+  成功 (742 chars): 你好！我是专为智慧食堂设计的AI助手，致力于用智能化方案提升用餐体验。以下是我的核心能力：
+
+**1. 智能服务**  
+- 🍽️ **个性化推荐**：根据用户口味、营养需求推荐菜品  
+- ⏱️ **高效点餐**：支持语音/文字快速下单，减少排队时间  
+- 📊 **数据看板**：实时监控菜品销量、营养摄入等数据  
+
+**2. 特色功能**  
+- 卡路里计算 | 过敏原提示 | 线上订餐 | 餐费自动结算  
+- 后厨库存预警 | 员工就餐分析 | 智能报损系统  
+
+**3. 技术优势**  
+▸ 对接智能餐柜/人脸支付等IoT设备  
+▸ 支持与食堂ERP系统数据互通  
+▸ 提供管理者端的数据分析报表  
+
+需要了解具体功能或解决方案，欢迎随时提问！当前版本已支持：菜品识别准确率98.7%，平均节省用餐者40%等待时间。你好！我是专为智慧食堂设计的AI助手，致力于用智能化方案提升用餐体验。以下是我的核心能力：
+
+**1. 智能服务**  
+- 🍽️ **个性化推荐**：根据用户口味、营养需求推荐菜品  
+- ⏱️ **高效点餐**：支持语音/文字快速下单，减少排队时间  
+- 📊 **数据看板**：实时监控菜品销量、营养摄入等数据  
+
+**2. 特色功能**  
+- 卡路里计算 | 过敏原提示 | 线上订餐 | 餐费自动结算  
+- 后厨库存预警 | 员工就餐分析 | 智能报损系统  
+
+**3. 技术优势**  
+▸ 对接智能餐柜/人脸支付等IoT设备  
+▸ 支持与食堂ERP系统数据互通  
+▸ 提供管理者端的数据分析报表  
+
+需要了解具体功能或解决方案，欢迎随时提问！当前版本已支持：菜品识别准确率98.7%，平均节省用餐者40%等待时间。
+
+[3] 测试 Siliconflow 类...
+  成功 (790 chars): # 智慧食堂助手介绍 
+
+你好！我是您的智慧食堂AI助手，很高兴为您服务。以下是我们的服务介绍：
+
+## 主要功能
+
+1. **菜品推荐**
+   - 根据您的口味、饮食偏好和营养需求推荐每日菜品
+   - 提供季节性特色菜品建议
+
+2. **营养分析**
+   - 提供菜品的详细营养成分分析
+   - 特殊饮食需求建议(如低盐、低脂、高蛋白等)
+
+3. **排队预测**
+   - 实时显示各窗口排队情况
+   - 智能建议最佳用餐时间
+
+4. **个性化服务**
+   - 记录您的饮食偏好
+   - 提供每周饮食报告
+
+5. **便捷服务**
+   - 线上订餐
+   - 餐品预订
+   - 支付查询
+
+## 如何使用
+
+只需告诉我您的需求，例如：
+- "今天有什么推荐菜品？"
+- "我需要低卡路里的午餐推荐"
+- "现在哪个窗口人最少？"
+
+我将为您提供最贴心的食堂用餐服务！# 智慧食堂助手介绍 
+
+你好！我是您的智慧食堂AI助手，很高兴为您服务。以下是我们的服务介绍：
+
+## 主要功能
+
+1. **菜品推荐**
+   - 根据您的口味、饮食偏好和营养需求推荐每日菜品
+   - 提供季节性特色菜品建议
+
+2. **营养分析**
+   - 提供菜品的详细营养成分分析
+   - 特殊饮食需求建议(如低盐、低脂、高蛋白等)
+
+3. **排队预测**
+   - 实时显示各窗口排队情况
+   - 智能建议最佳用餐时间
+
+4. **个性化服务**
+   - 记录您的饮食偏好
+   - 提供每周饮食报告
+
+5. **便捷服务**
+   - 线上订餐
+   - 餐品预订
+   - 支付查询
+
+## 如何使用
+
+只需告诉我您的需求，例如：
+- "今天有什么推荐菜品？"
+- "我需要低卡路里的午餐推荐"
+- "现在哪个窗口人最少？"
+
+我将为您提供最贴心的食堂用餐服务！
+
+[4] 测试 AiUtil.get_model_from_factory...
+  模型类型: Siliconflow
+  有 role_map: True
+  role_map={'system': 'system', 'user': 'user', 'assistant': 'assistant', 'tool': 'tool', 'model': 'assistant'}
+Traceback (most recent call last):
+  File "D:\acondata\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\acondata\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "E:\刘柏霆\RuoYi-Vue3-FastAPI-master\ruoyi-fastapi-backend\run_tests.py", line 103, in test4
+    async for chunk in agent.arun('你好，介绍下食堂的菜', stream=True, stream_events=True):
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\acondata\Lib\site-packages\agno\agent\_run.py", line 2331, in _arun_stream
+    async for event in ahandle_model_response_stream(
+  File "D:\acondata\Lib\site-packages\agno\agent\_response.py", line 1232, in ahandle_model_response_stream
+    async for model_response_event in model_response_stream:  # type: ignore
+  File "D:\acondata\Lib\site-packages\agno\models\fallback.py", line 201, in acall_model_stream_with_fallback
+    async for event in model.aresponse_stream(**kwargs):
+  File "D:\acondata\Lib\site-packages\agno\models\base.py", line 1668, in aresponse_stream
+    async for model_response_delta in self.aprocess_response_stream(
+  File "D:\acondata\Lib\site-packages\agno\models\base.py", line 1570, in aprocess_response_stream
+    async for response_delta in self._ainvoke_stream_with_retry(
+  File "D:\acondata\Lib\site-packages\agno\models\base.py", line 390, in _ainvoke_stream_with_retry
+    async for response in self.ainvoke_stream(**kwargs):
+  File "D:\acondata\Lib\site-packages\agno\models\openai\chat.py", line 693, in ainvoke_stream
+    async for chunk in async_stream:
+  File "D:\acondata\Lib\site-packages\openai\_streaming.py", line 158, in __aiter__
+    async for item in self._iterator:
+  File "D:\acondata\Lib\site-packages\openai\_streaming.py", line 172, in __stream__
+    async for sse in iterator:
+  File "D:\acondata\Lib\site-packages\openai\_streaming.py", line 162, in _iter_events
+    async for sse in self._decoder.aiter_bytes(self.response.aiter_bytes()):
+  File "D:\acondata\Lib\site-packages\openai\_streaming.py", line 319, in aiter_bytes
+    async for chunk in self._aiter_chunks(iterator):
+  File "D:\acondata\Lib\site-packages\openai\_streaming.py", line 330, in _aiter_chunks
+    async for chunk in iterator:
+  File "D:\acondata\Lib\site-packages\httpx\_models.py", line 997, in aiter_bytes
+    async for raw_bytes in self.aiter_raw():
+  File "D:\acondata\Lib\site-packages\httpx\_models.py", line 1055, in aiter_raw
+    async for raw_stream_bytes in self.stream:
+  File "D:\acondata\Lib\site-packages\httpx\_client.py", line 176, in __aiter__
+    async for chunk in self._stream:
+  File "D:\acondata\Lib\site-packages\httpx\_transports\default.py", line 271, in __aiter__
+    async for part in self._httpcore_stream:
+  File "D:\acondata\Lib\site-packages\httpcore\_async\connection_pool.py", line 407, in __aiter__
+    raise exc from None
+  File "D:\acondata\Lib\site-packages\httpcore\_async\connection_pool.py", line 403, in __aiter__
+    async for part in self._stream:
+  File "D:\acondata\Lib\site-packages\httpcore\_async\http11.py", line 342, in __aiter__
+    raise exc
+  File "D:\acondata\Lib\site-packages\httpcore\_async\http11.py", line 334, in __aiter__
+    async for chunk in self._connection._receive_response_body(**kwargs):
+  File "D:\acondata\Lib\site-packages\httpcore\_async\http11.py", line 203, in _receive_response_body
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\acondata\Lib\site-packages\httpcore\_async\http11.py", line 217, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\acondata\Lib\site-packages\httpcore\_backends\anyio.py", line 35, in read
+    return await self._stream.receive(max_bytes=max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\acondata\Lib\site-packages\anyio\streams\tls.py", line 239, in receive
+    data = await self._call_sslobject_method(self._ssl_object.read, max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\acondata\Lib\site-packages\anyio\streams\tls.py", line 182, in _call_sslobject_method
+    data = await self.transport_stream.receive()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\acondata\Lib\site-packages\anyio\_backends\_asyncio.py", line 1314, in receive
+    await self._protocol.read_event.wait()
+  File "D:\acondata\Lib\asyncio\locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\刘柏霆\RuoYi-Vue3-FastAPI-master\ruoyi-fastapi-backend\run_tests.py", line 108, in <module>
+    result4 = asyncio.run(test4())
+              ^^^^^^^^^^^^^^^^^^^^
+  File "D:\acondata\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "D:\acondata\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt

@@ -1,0 +1,68 @@
+开始测试
+时间: 2026-06-19 18:15:48
+
+=== 测试1: 直接 OpenAI ===
+成功: 你好！👋 很高兴遇见你～ 今天有什么我可以帮你的吗？😊
+
+=== 测试2: agno Agent (OpenAIChat + role_map) ===
+成功 (len=622): 你好！我是智慧食堂AI助手，专注于为食堂场景提供智能化解决方案。以下是我的核心功能简介：
+
+### 🍽 核心能力
+1. **智能推荐**  
+   - 根据用户口味/健康需求推荐菜品
+   - 支持「忌口过滤」「营养搭配」等场景
+
+2. **智慧服务**  
+   - 在线订餐&档口预约  
+   - 实时查看「排队人数」「热门菜品」
+
+3. **数据管理**  
+   - 消费数据分析  
+  
+
+=== 测试3: AiUtil.get_model_from_factory ===
+  模型: Siliconflow
+  role_map: {'system': 'system', 'user': 'user', 'assistant': 'assistant', 'tool': 'tool', 'model': 'assistant'}
+成功 (len=832): # 智慧食堂简介
+
+您好！我是智慧食堂的AI助手，很高兴为您介绍我们的食堂服务：
+
+## 核心特点
+
+1. **智能点餐**：支持手机APP/小程序预定点餐，减少排队时间
+2. **营养分析**：自动计算每餐的营养成分，提供健康饮食建议
+3. **刷脸支付**：采用人脸识别技术实现快速结算
+4. **个性化推荐**：根据您的饮食偏好和历史记录智能推荐菜品
+5. **实时数据**：菜品余量/排队情况
+
+=== 测试4: 完整 AiChatService.chat_services ===
+  user_id=1...
+错误: 1 validation error for AiChatRequestModel
+modelId
+  Field required [type=missing, input_value={'model_id': 1, 'message'...864175', 'images': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+Traceback (most recent call last):
+  File "E:\刘柏霆\RuoYi-Vue3-FastAPI-master\ruoyi-fastapi-backend\run_final.py", line 133, in <module>
+    r = asyncio.run(t4(uid))
+        ^^^^^^^^^^^^^^^^^^^^
+  File "D:\acondata\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "D:\acondata\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\acondata\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "E:\刘柏霆\RuoYi-Vue3-FastAPI-master\ruoyi-fastapi-backend\run_final.py", line 112, in t4
+    chat_req = AiChatRequestModel(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\acondata\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for AiChatRequestModel
+modelId
+  Field required [type=missing, input_value={'model_id': 1, 'message'...864175', 'images': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+
+=== 测试完成 ===
