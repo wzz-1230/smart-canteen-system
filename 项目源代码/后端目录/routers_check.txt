@@ -1,0 +1,124 @@
+{
+  "code": 200,
+  "msg": "操作成功",
+  "data": [
+    {
+      "name": "Canteen",
+      "path": "/canteen",
+      "hidden": false,
+      "redirect": "noRedirect",
+      "component": "Layout",
+      "query": null,
+      "alwaysShow": true,
+      "meta": {
+        "title": "食堂管理",
+        "icon": "money",
+        "noCache": false,
+        "link": null
+      },
+      "children": [
+        {
+          "name": "Canteenmenu",
+          "path": "menu",
+          "hidden": false,
+          "component": "canteen/menu/index",
+          "query": null,
+          "meta": {
+            "title": "菜品管理",
+            "icon": "list",
+            "noCache": false,
+            "link": null
+          }
+        },
+        {
+          "name": "Canteenorder",
+          "path": "order",
+          "hidden": false,
+          "component": "canteen/order/index",
+          "query": null,
+          "meta": {
+            "title": "订单管理",
+            "icon": "shopping",
+            "noCache": false,
+            "link": null
+          }
+        },
+        {
+          "name": "Canteentable",
+          "path": "table",
+          "hidden": false,
+          "component": "canteen/table/index",
+          "query": null,
+          "meta": {
+            "title": "餐桌管理",
+            "icon": "table",
+            "noCache": false,
+            "link": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Orderonline",
+      "path": "/order-online",
+      "hidden": false,
+      "redirect": "noRedirect",
+      "component": "Layout",
+      "query": null,
+      "alwaysShow": true,
+      "meta": {
+        "title": "线上点单",
+        "icon": "shopping-cart",
+        "noCache": false,
+        "link": null
+      },
+      "children": [
+        {
+          "name": "Orderonlineindex",
+          "path": "index",
+          "hidden": false,
+          "component": "canteen/order-online",
+          "query": null,
+          "meta": {
+            "title": "线上点单",
+            "icon": "shopping-cart",
+            "noCache": false,
+            "link": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Aichat",
+      "path": "/ai-chat",
+      "hidden": false,
+      "redirect": "noRedirect",
+      "component": "Layout",
+      "query": null,
+      "alwaysShow": true,
+      "meta": {
+        "title": "AI????",
+        "icon": "chat-dot-round",
+        "noCache": false,
+        "link": null
+      },
+      "children": [
+        {
+          "name": "Aichatindex",
+          "path": "ai-chat",
+          "hidden": false,
+          "component": "ai/chat",
+          "query": null,
+          "meta": {
+            "title": "AI????",
+            "icon": "chat-dot-round",
+            "noCache": false,
+            "link": null
+          }
+        }
+      ]
+    }
+  ],
+  "success": true,
+  "time": "2026-06-19T20:18:33.110729"
+}
