@@ -1,23 +1,92 @@
+# ===================== 操作系统文件 =====================
 .DS_Store
-node_modules/
-dist/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-**/*.log
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-tests/**/coverage/
-tests/e2e/reports
-selenium-debug.log
-
-# Editor directories and files
-.idea
-.vscode
+# ===================== 编辑器目录 =====================
+.idea/
+.vscode/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.local
 
+# ===================== 日志文件 =====================
+*.log
+*.err
+logs/
+
+# ===================== 数据库文件 =====================
+*.db
+*.sqlite
+*.sqlite3
+dump.rdb
+
+# ===================== 环境配置文件 =====================
+.env
+.env.local
+.env.*
+!.env.example
+
+# ===================== 压缩包 =====================
+*.zip
+*.tar.gz
+*.rar
+
+# ===================== 临时测试/调试文件 =====================
+_*.py
+_*.txt
+_*.json
+_*.out
+test_*.py
+test_*.txt
+check_*.py
+check_*.txt
+debug_*.py
+debug_*.txt
+fix_*.py
+fix_*.txt
+insert_*.py
+insert_*.txt
+add_*.py
+add_*.txt
+query_*.py
+query_*.txt
+verify_*.py
+verify_*.txt
+gen_*.py
+gen_*.txt
+make_*.py
+make_*.txt
+check_*.*
+final_*.*
+fe_*.*
+backend_*.*
+
+# ===================== Python =====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# ===================== Node.js =====================
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 package-lock.json
-yarn.lock
+
+# ===================== 中间件缓存 =====================
+.redis/
+*.rdb
+
+# ===================== 文档 =====================
+*.docx
+*.doc
